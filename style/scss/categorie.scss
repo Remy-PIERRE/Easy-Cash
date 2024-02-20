@@ -1,0 +1,111 @@
+@import "./main.scss";
+@import "./global.scss";
+@import "./header.scss";
+@import "./hero.scss";
+@import "./salesCharte.scss";
+@import "./footer.scss";
+
+// PAGE DESCRIPTION //
+.pageDesc--container {
+
+    position: relative;
+}
+
+.pageDesc--wrapper {
+    max-height: 200px;
+    transition: all 0.4s;
+    overflow: hidden;
+    margin-bottom: 100px;
+
+    p {
+        font-size: 1rem;
+        line-height: 1.2;
+        color: var(--paraph-black);
+        margin-bottom: 32px;
+    }
+
+    &.open {
+        max-height: 1000px;
+    }
+}
+
+.pageDesc--button {
+    position: absolute;
+    bottom: -40px;
+    right: 20px;
+
+    button {
+        width: fit-content;
+        padding: 0 12px;
+    }
+}
+
+// GALLERY //
+.gallery--wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    align-content: center;
+    justify-items: center;
+}
+
+// CARD //
+.productCard--container {
+    width: clamp(200px, 100%, 350px);
+    border: none;
+}
+
+.productCard--wrapper {
+    width: 100%;
+}
+
+.card--image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #333;
+
+    img {
+        height: 105%;
+        width: 105%;
+    }
+}
+
+.card--info {
+    padding: 8px 8px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h3 {
+        font-size: 1rem;
+        font-weight: bold;
+        color: var(--paraph-black);
+    }
+
+    h4 {
+        font-size: 1rem;
+        font-weight: bold;
+        color: var(--title-main);
+    }
+}
+
+@media (min-width: 400px) {
+    .gallery--wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 796px) {
+    .gallery--wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1280px) {
+    .gallery--wrapper {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

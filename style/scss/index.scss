@@ -1,0 +1,208 @@
+@import "./main.scss";
+@import "./global.scss";
+@import "./header.scss";
+@import "./salesCharte.scss";
+@import "./footer.scss";
+
+// GALLERY //
+.gallery--wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+.categCard--container {    
+    height: 200px;  
+}
+
+.categCard--wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-filter-dark);
+
+    h2 {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: var(--title-white)
+    }
+}
+
+// HOW TO RENT //
+.howToRent--container {
+    background: #f0eef4;
+}
+
+.howToRent--wrapper {
+    padding-bottom: 40px;
+}
+
+.howToRent--content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px
+}
+
+.howToRent--section {
+    width: clamp(150px, 100%, 250px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: var(--title-white);
+        background: var(--bg-color-main);
+        padding: 2px 8px;
+    }
+}
+
+.howToRent--section--paraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+
+    p {
+        font-size: 1rem;
+        color: var(--paraph-black);
+        text-align: center;
+    }
+
+    span {       
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: var(--bg-color-main); 
+    }
+}
+
+// WHY US SECTION //
+.whyUs--section {
+    width: 100%;
+    margin-bottom: 20px;
+
+    h3 {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: var(--bg-color-main);
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1rem;
+        color: var(--paraph-black);
+        margin-bottom: 12px;
+    }
+}
+
+// FIND US SECTION //
+.findUs--adress {
+    margin-bottom: 32px;
+    text-align: center;
+
+    h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: var(--title-black);
+        margin-bottom: 12px;
+    }
+
+    p {
+        font-size: 1rem;
+        color: var(--paraph-black);
+        margin-bottom: 4px;
+    }
+}
+
+.findUs--iframe {
+    width: 100%;
+    border: 1px solid #333;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+
+    iframe {
+        width: 100%;
+    }
+}
+
+@media (min-width: 976px) {
+    // GALLERY //
+    .gallery--wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .categCard--container {    
+        height: 300px;  
+    }
+
+    .categCard--wrapper {
+        h2 {
+            font-size: 1.6rem;
+        }
+    }
+
+    // HOW TO RENT //
+    .howToRent--content {
+        gap: 60px
+    }
+
+    .howToRent--section--title {
+        gap: 4px;        
+    
+        h3 {
+            padding: 6px 12px;
+            font-size: 1.4rem;
+        }
+    }
+
+    .howToRent--section--paraph {
+        gap: 8px;
+    
+        p {
+            font-size: 1.2rem;
+        }
+    
+        span {       
+            font-size: 1.4rem;
+        }
+    }
+
+    // WHY US SECTION //
+    .whyUs--section {
+        margin-bottom: 40px;
+    
+        h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+    
+        p {
+            font-size: 1.2rem;
+            line-height: 1.4;
+        }
+    }
+
+    // FIND US SECTION //
+    .findUs--adress {
+        margin-bottom: 40px;
+    
+        h3 {
+            font-size: 1.6rem;
+            margin-bottom: 16px;
+        }
+    
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}

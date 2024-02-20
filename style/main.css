@@ -1,0 +1,37 @@
+:root {
+  --title-black: #333;
+  --title-main: rgb(202 138 4);
+  --title-white: #fff;
+  --paraph-black: #666;
+  --paraph-white: #fff;
+  --bg-color-main: rgb(202 138 4);
+  --bg-color-main-light: #fff;
+  --bg-color-second: #fff;
+  --bg-color-second-light: #fff;
+  --bg-filter-dark: rgba(0, 0, 0, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+body {
+  width: 100vw;
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */

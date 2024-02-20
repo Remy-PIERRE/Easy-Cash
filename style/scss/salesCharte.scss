@@ -1,0 +1,81 @@
+// SALE CHARTER //
+.saleCharter--container {
+    background: #f0eef4;
+}
+
+.saleCharter--wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.saleCharter--section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        height: 52px;
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        font-size: 1rem;
+        color: var(--title-black);
+        margin-bottom: 12px;
+    }
+
+    p {
+        font-size: 0.8rem;
+        color: var(--paraph-black);
+    }
+}
+
+.saleCharter--section--info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    span {
+        font-size: 1rem;
+        font-weight: bold;
+        color: var(--title-main); 
+    }
+}
+
+@media (min-width: 976px) {
+    .saleCharter--wrapper {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        gap: 80px;
+    }
+
+    .saleCharter--section {
+        img {
+            height: 66px;
+        }
+    
+        h4 {
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+        }
+    
+        p {
+            font-size: 1.2rem;
+            color: var(--paraph-black);
+        }
+    }
+
+    .saleCharter--section--info {
+        gap: 40px;
+    
+        span {
+            font-size: 1.4rem;
+        }
+    }
+}
