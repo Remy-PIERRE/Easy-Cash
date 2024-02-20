@@ -70,12 +70,12 @@
 			</section>
 
 			<section class="nav--wrapper">
-				<div class="nav--button--mobile">
+				<div class="nav--button--mobile" id="menuMobileButton">
 					<p>MENU</p>
 					<img src="./public/images/menu_white.png" alt="icone du menu" />
 				</div>
 
-				<section class="nav--mobile">
+				<section class="nav--mobile" id="menuMobileContainer">
 					<nav class="nav--mobile--wrapper">
 						<a href="./index.html">ACCUEIL</a>
 						<a href="#">&Agrave; PROPOS</a>
@@ -85,6 +85,12 @@
 						<a href="./categorie.html">ANIMATION & JEUX</a>
 						<a href="./contact.html">CONTACT</a>
 					</nav>
+
+					<img
+						src="./public/images/croix.png"
+						alt="icone d'une croix"
+						class="nav--mobile--cross"
+						id="menuMobileCross" />
 				</section>
 
 				<nav class="nav--desk">
@@ -120,7 +126,7 @@
 			</section>
 
 			<article class="pageDesc--container container">
-				<div class="pageDesc--wrapper wrapper">
+				<div class="pageDesc--wrapper wrapper" id="dropDownArticle">
 					<p>
 						Chez Easy Cash, nous mettons à votre disposition un parc de matériel
 						de sonorisation de qualité supérieure, prêt à répondre à vos besoins
@@ -187,7 +193,7 @@
 					</p>
 				</div>
 				<div class="pageDesc--button">
-					<button class="btn">Lire la suite</button>
+					<button class="btn" id="dropDownButton">Lire la suite</button>
 				</div>
 			</article>
 
@@ -318,5 +324,7 @@
 				</div>
 			</div>
 		</footer>
+
+		<script src="./script/main.js" defer></script>
 	</body>
 </html>

@@ -158,6 +158,10 @@
     z-index: 10;
     transition: all 0.4s;
     background: var(--bg-filter-dark);
+
+    &.opened {
+        left: 0;
+    }
 }
 
 .nav--mobile--wrapper {
@@ -177,6 +181,14 @@
         align-items: center;
         height: 60px;
     }
+}
+
+.nav--mobile--cross {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 30px;
+    width: 30px;
 }
 
 @media (min-width: 976px) {

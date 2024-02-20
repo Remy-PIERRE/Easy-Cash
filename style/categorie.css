@@ -308,6 +308,9 @@ a, button {
   transition: all 0.4s;
   background: var(--bg-filter-dark);
 }
+.nav--mobile.opened {
+  left: 0;
+}
 
 .nav--mobile--wrapper {
   width: 70%;
@@ -325,6 +328,14 @@ a, button {
   display: flex;
   align-items: center;
   height: 60px;
+}
+
+.nav--mobile--cross {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 30px;
+  width: 30px;
 }
 
 @media (min-width: 976px) {
@@ -667,7 +678,7 @@ a, button {
   color: var(--paraph-black);
   margin-bottom: 32px;
 }
-.pageDesc--wrapper.open {
+.pageDesc--wrapper.opened {
   max-height: 1000px;
 }
 
