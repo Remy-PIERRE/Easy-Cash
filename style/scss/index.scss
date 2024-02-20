@@ -36,6 +36,7 @@
 }
 
 .howToRent--wrapper {
+    padding-top: 40px;
     padding-bottom: 40px;
 }
 
@@ -154,6 +155,10 @@
     // HOW TO RENT //
     .howToRent--content {
         gap: 60px
+    }
+
+    .howToRent--wrapper {
+        padding-top: 0;
     }
 
     .howToRent--section--title {

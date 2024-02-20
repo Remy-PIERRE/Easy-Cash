@@ -728,7 +728,7 @@ a, button {
   color: var(--title-main);
 }
 
-@media (min-width: 400px) {
+@media (min-width: 450px) {
   .gallery--wrapper {
     grid-template-columns: repeat(2, 1fr);
   }

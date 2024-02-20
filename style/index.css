@@ -606,6 +606,7 @@ a, button {
 }
 
 .howToRent--wrapper {
+  padding-top: 40px;
   padding-bottom: 40px;
 }
 
@@ -706,6 +707,9 @@ a, button {
   }
   .howToRent--content {
     gap: 60px;
+  }
+  .howToRent--wrapper {
+    padding-top: 0;
   }
   .howToRent--section--title {
     gap: 4px;
