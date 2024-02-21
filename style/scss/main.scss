@@ -1,16 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 :root {
     --title-black: #333;
-    --title-main: rgb(202 138 4);
+    // --title-main: rgb(202 138 4);
+    --title-main: #103a64;
     --title-white: #fff;
 
     --paraph-black: #666;
     --paraph-white: #fff;
     
-    --bg-color-main: rgb(202 138 4);
+    // --bg-color-main: rgb(202 138 4);
+    --bg-color-main: #103a64;
     --bg-color-main-light: #fff;
     --bg-color-second: #fff;
     --bg-color-second-light: #fff;
-    --bg-filter-dark: rgba(0, 0, 0, 0.4);
+    --bg-filter-dark: rgba(0, 0, 0, 0.3);
 }
 
 * {
@@ -22,8 +26,15 @@
 
 html {
     font-family: sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     font-size: 16px;
     font-weight: normal;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
 }
 
 body {
