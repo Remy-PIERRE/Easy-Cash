@@ -1,5 +1,7 @@
 window.addEventListener("load", initApp);
 
+// DEV //
+
 function initApp() {
 	handleMenuMobile();
 	handleCategoryDropDown();
